@@ -1,0 +1,204 @@
+ body {
+      background-color: #F1EDEE;
+      font-family: 'Corbel', sans-serif;
+      color: #6b3131;
+      margin: 0;
+      padding: 0;
+    }
+    .page-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .profile-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 50px;
+      align-items: stretch; 
+    }
+    .left-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+        justify-content: center;  
+      background: #EAEAEA;
+      border-radius: 20px;
+      width: 260px;
+      text-align: center;
+      padding: 30px;
+      height: auto;
+    }
+    .profile-photo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #eac1bc;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(233, 169, 157, 0.3);
+    }
+    .social-icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  padding: 5px;
+  background-color: #F0E6E4;   
+  border-radius: 50%;       
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+    .contact-text {
+      font-weight: 600;
+      margin: 15px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+   /* Ganti gambar saat hover */
+.social-icon.instagram:hover {
+  content: url("instagram-hover.png");
+}
+
+.social-icon.gmail:hover {
+  content: url("gmail-hover.png");
+}
+
+.social-icon.whatsapp:hover {
+  content: url("whatsapp-hover.png");
+}
+    .right-box {
+      flex: 1;
+      display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
+    }
+    .right-box h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #783f37;
+      margin: 0 0 10px;
+    }
+    .right-box > p {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .flex-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .description-box{
+      flex: 1 1 300px;
+      background: #D4C1BA;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: justify;
+    }
+   .portfolio-box {
+      flex: 1 1 300px;
+      background: #EAEAEA;
+      padding: 30px;
+      border-radius: 15px;
+    }
+    .description-box p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .portfolio-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .nav-btn {
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 6px 10px;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .nav-btn:active {
+  background-color: #A86964;  
+  color: white;              
+}
+    .info-wrapper {
+      margin-top: 40px;
+    }
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .info-box {
+      flex: 1 1 300px;
+      background: #EAEAEA;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .info-box:nth-of-type(3),
+.info-box:nth-of-type(4) {
+  background-color: #D8BBB9; 
+  color: #3c0a0a;           
+}
+    .info-box h2, .info-box h3, .info-box h4, .info-box h5, .portfolio-box h4 {
+      margin-top: 0;
+      font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b3131;
+    }
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  background-color: #f9f3f3;
+  border: 1px solid #f5b5c0;
+}
+
+th {
+  background-color: #fdd4d8;
+  color: #6b3131;
+  text-align: left;
+  padding: 8px 12px;
+  border: 1px solid white;
+  font-weight: 700;
+}
+
+td {
+  padding: 8px 12px;
+  border: 1px solid white;
+  color: #4c2f2f;
+  vertical-align: top;
+}
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      columns: 2;
+    }
+
+    
+    @media (max-width: 768px) {
+      .flex-content, .info-row {
+        flex-direction: column;
+      }
+      ul {
+        columns: 1;
+      }
+    }
