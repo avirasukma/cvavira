@@ -62,7 +62,6 @@
       gap: 15px;
       margin-top: 10px;
     }
-   /* Ganti gambar saat hover */
 .social-icon.instagram:hover {
   content: url("instagram-hover.png");
 }
